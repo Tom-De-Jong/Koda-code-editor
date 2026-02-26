@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tauri App</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/monaco-editor/0.53.0/min/vs/loader.min.js"></script>
+  <script type="module" src="/main.js" defer></script>
+
+  
+</head>
+
+<body>
+  <div class="topBar">
+    <ul class="unlist">
+      <li class="openFile unlistItem">Open file</li>
+      <li class="saveFile unlistItem">Save file</li>
+      <li class="saveFileAs unlistItem">Save file as</li>
+      <li class="switchMarkdown unlistItem">Markdown</li>
+      <li class="dirtree unlistItem">Dir tree</li>
+      <li class="unlistItem wordCount">wrds</li>
+    </ul>
+  </div>
+
+  <div class="window">
+    <div class="filetree" style="display: none;">
+      <div class="dirTreeItem dotdot">..</div>
+    </div>
+
+    <main class="textContainer">
+      <div class="textWrapper">
+        <div id="editor" class="editor"></div>
+      </div>
+    </main>
+
+    <div class="markdownPreview" style="display: none;">
+    </div>
+
+  </div>
+
+
+</body>
+
+</html>
